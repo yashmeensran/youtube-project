@@ -1,0 +1,155 @@
+.header{
+    background-color: white;
+    height: 55px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+.left-section{
+    width: 200px;
+    padding-left: 22px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar-icon{
+    height: 24px;
+}
+.menu-bar-button{
+    margin-right: 20px;
+    background-color: white;
+    padding: 8px 9px;
+    border-radius: 20px;
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-bar-button:hover{
+    background-color: rgb(229, 229, 229);
+}
+.yt-icon{
+    height: 22px;
+}
+.middle-section{
+    max-width: 650px;
+    margin-left: 60px;
+    margin-right: 90px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.search-box{
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 3px;
+    padding-left: 12px;
+    font-size: 16px;
+    font-family: Roboto, arial;
+
+    flex: 1;
+}
+.search-button{
+    width: 60px;
+    height: 36px;
+    margin-left: -1px;
+    border-radius: 3px;
+    border: 1px solid rgb(211, 211, 211);
+    transition: background-color 0.15s;
+}
+.search-button:hover{
+    background-color: rgb(232, 230, 230);
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.three-dots-container .tooltip{
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;
+    font-family: roboto, arial;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+
+    position: absolute;
+    bottom: -45px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.three-dots-container:hover .tooltip{
+    opacity: 1;
+}
+.search-button,
+.voice-search-button,
+.three-dots-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-icon{
+    height: 25px;
+}
+.voice-search-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    margin-left: 14px;
+    border: none;
+}
+.voice-serach-icon{
+    height: 25px;
+}
+
+.right-section{
+    width: 150px;
+    padding-right: 6px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.three-dots{
+    height: 26px;
+    margin-right: 14px;
+}
+.sign-in-button{
+    height: 35px;
+    border-radius: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    transition: background-color 0.15s;
+
+    display: flex;
+    align-items: center;
+}
+.sign-in-button:hover{
+    background-color: rgba(5, 132, 217, 0.2);
+    height: 37px;
+    padding: 1px 13px;
+    border: none;
+}
+.sign-in-button p{
+    font-family: Roboto, arial;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(5, 132, 217);
+}
+.person-in-circle{
+    height: 26px;
+    margin-right: 3px;
+}
